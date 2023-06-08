@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle_exercise</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #toggle-slider {
+            display: none;
+        }
+        label {
+            text-indent: -999em; 
+            /* ㄴ> 원래 의미는 들여쓰기
+               !시맨틱태그!
+               화면엔 안 보이지만 검색결과에 나오게 하기 위함
+               저~~기 화면 밖으로 보내버린 것 */
+            cursor: pointer;
+            width: 100px;
+            height: 50px;
+            background-color: #DFF7FA;
+            border-radius: 25px;
+            position:relative;
+            transition: 0.5s ease-out;
+        }
+        label:after {
+            content: '';
+            width: 40px;
+            height: 40px;
+            background-color: #A5CACE;
+            position: absolute;
+            border-radius: 50%;
+            top: 5px;
+            left: 5px;
+            transition: 0.5s ease-out;
+        }
+        /* checked 됐을 때 label:after만 적용 */
+        #toggle-slider:checked + label:after {
+           left:50px;
+           background-color: #1D6269;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id ="toggle-slider">
+    <label for="toggle-slider">on/off</label>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .content {
+        padding-left:0;
+    }
+    .content:after{
+        content:" ";
+        display:block;
+        clear: both;
+    }
+    .item {
+        float:left;
+        height : 50px;
+        width : 50px;
+        border : 1px solid lightgray;
+        color : white;
+        background : blue;
+        list-style-type:none;
+        margin-right: 6px;
+        text-align: center;
+    }
+    .item:nth-child(2):hover {
+        position : absolute;
+        left : 20px;
+        top : 20px;
+        background : green;
+    }
+    .nav {
+        display:flex;
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+        position: relative;
+    }
+    .flex {
+        margin-right: 8px;
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+        justify-content: center;
+        border: 1px solid gray;
+        position: relative;
+    }
+    .flex:nth-child(2):hover {
+        background-color: green;
+        position: relative;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+    }
+    ul {
+        position: relative;
+    }
+</style>
+<body>
+<h2>상대배치2, float</h2>
+<hr>
+<ul class="content">
+    <li class="item">T</li>
+    <li class="item">h</li>
+    <li class="item">a</li>
+    <li class="item">n</li>
+    <li class="item">k</li>
+    <li class="item">s</li>
+</ul>
+<h2>상대배치3, flex</h2>
+<hr>
+<ul class="nav">
+    <li class="flex">T</li>
+    <li class="flex">h</li>
+    <li class="flex">a</li>
+    <li class="flex">n</li>
+    <li class="flex">k</li>
+    <li class="flex">s</li>
+</ul>
+</body>
+</html>

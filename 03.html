@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <details>
+        <summary>Q1</summary>
+            <p>뿅</p>
+            <p>뿅2</p>
+    </details>
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>시맨틱 인라인 태그 중 mark 태그는 <mark>형광펜 효과</mark>를 합니다.</p>
+    
+    <br />
+    <br />
+    <p>콘서트는 <time datetime="18:00">오후 6시</time>에 시작됩니다.</p>
+
+    <br>
+    <br>
+    <label for="level">10%:</label>
+    <meter id="level" max="100" value="10">at 50/100</meter><br>
+
+    <label for="level">50%:</label>
+    <meter id="level" max="100" value="50">at 50/100</meter><br>
+
+    <label for="level">70%:</label>
+    <meter id="level" max="100" value="70">at 50/100</meter><br>
+
+    <label for="level">100%:</label>
+    <meter id="level" max="100" value="100">at 50/100</meter>
+
+    <br>
+    <br>
+    <progress value="50" max="100"></progress>
+
+    <br>
+    <br>
+    <form action="#">
+        가고 싶은 나라:
+        <input type="text" list="contries">
+        <datalist id="contries">
+            <option value="미국"></option>
+            <option value="브라질"></option>
+            <option value="런던"></option>
+            <option value="파리"></option>
+            <option value="파키스탄"></option>
+        </datalist>
+    </form>
+
+    <br>
+    <br>
+    <input id="colorInput" type="color">
+    <h1 id="text">선택한 색깔입니다.</h1>
+    <script>
+        document.getElementById("colorInput").addEventListener("change", function(){
+            document.getElementById("text").style.color = this.value;
+        })
+
+    </script>
+</body>
+</html>

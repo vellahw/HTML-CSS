@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>반응형 디자인 예시</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /*mobile first*/
+/*body {
+    background-color: gold;
+@media(min-width: 768px) and (max-width:1024px) {
+    body {
+        background-color: lightblue;
+        font-size: 1.2em;
+    }
+    ul li {
+        display:inline;
+        }
+}
+@media(min-width:1025) {
+    body {
+        background-color: lightpink;
+    }
+}*/
+/*desktop first*/
+body {
+    background-color: lightpink;
+}
+
+ul li {
+    display:inline;
+}
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    body {
+        background-color: lightblue;
+        font-size: 1.2em;
+    }
+
+    ul li {
+        display:block;
+    }
+}
+@media(max-width:767px){
+    body {
+        background-color: gold;
+    }
+
+    ul li {
+        display:block;
+    }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>반응형 디자인</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">메뉴 1</a></li>
+      <li><a href="#">메뉴 2</a></li>
+      <li><a href="#">메뉴 3</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>섹션 1</h2>
+      <p>내용 1</p>
+    </section>
+  </main>
+  <footer>
+    <p>저작권 © 2023 반응형 디자인</p>
+  </footer>
+</body>
+</html>
