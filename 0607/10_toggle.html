@@ -15,6 +15,7 @@
         #toggle-slider {
             display: none;
         }
+        
         label {
             text-indent: -999em; 
             /* ㄴ> 원래 의미는 들여쓰기
@@ -29,7 +30,7 @@
             position:relative;
             transition: 0.5s ease-out;
         }
-        label:after {
+        label::after {
             content: '';
             width: 40px;
             height: 40px;
@@ -40,11 +41,11 @@
             left: 5px;
             transition: 0.5s ease-out;
         }
-        /* checked 됐을 때 label:after만 적용 */
+        
         #toggle-slider:checked + label {
             background-color: #20d51a;
         }
-        #toggle-slider:checked + label:after {
+        #toggle-slider:checked + label::after {
            left:calc(100% - 45px);
            background-color: #fff;
         }
