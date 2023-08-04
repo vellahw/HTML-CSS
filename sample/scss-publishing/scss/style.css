@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 button {
   cursor: pointer;
+  border: none;
 }
 
 a {
@@ -13,4 +14,11 @@ ul, ol, li {
 
 html, body {
   font-family: "Noto Sans KR", sans-serif;
+}
+
+.btn-primary {
+  background-color: #219653;
+  color: #fff;
+  padding: 4px 12px 4px 12px;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
